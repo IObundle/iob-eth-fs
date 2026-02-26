@@ -6,4 +6,4 @@
 `define IOB_AXIS_S_AXI_M_READ_AXI_ID_W 1
 `define IOB_AXIS_S_AXI_M_READ_RLEN_W 1
 // Core Configuration Macros.
-`define IOB_AXIS_S_AXI_M_READ_VERSION 16'h0081
+`define IOB_AXIS_S_AXI_M_READ_VERSION 24'h008100

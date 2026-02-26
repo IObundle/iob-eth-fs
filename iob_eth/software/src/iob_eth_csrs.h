@@ -3,7 +3,7 @@
  *
  * SPDX-License-Identifier: MIT
  *
- * Py2HWSW Version 0.81 has generated this code (https://github.com/IObundle/py2hwsw).
+ * Py2HWSW Version 0.81.0 has generated this code (https://github.com/IObundle/py2hwsw).
  */
 
 #ifndef H_IOB_ETH_CSRS_CSRS_H
@@ -375,12 +375,13 @@ void iob_eth_csrs_set_bd(uint32_t value, int addr);
 uint32_t iob_eth_csrs_get_bd(int addr);
 /**
  * @brief Get version value.
- * Product version. This 16-bit register uses nibbles to represent decimal
- * numbers using their binary values. The two most significant nibbles represent
- * the integral part of the version, and the two least significant nibbles
- * represent the decimal part. For example V12.34 is represented by 0x1234.
- * @return uint16_t version value.
+ * Product version in SemVer format. This 24-bit register uses nibbles to
+ * represent decimal numbers using their binary values. The two most significant
+ * nibbles represent the major part of the version, followed by two nibbles that
+ * represent the minor part. The two least significant nibbles represent the
+ * patch version. For example V12.34.56 is represented by 0x123456.
+ * @return uint32_t version value.
  */
-uint16_t iob_eth_csrs_get_version();
+uint32_t iob_eth_csrs_get_version();
 
 #endif // H_IOB_ETH_CSRS__CSRS_H

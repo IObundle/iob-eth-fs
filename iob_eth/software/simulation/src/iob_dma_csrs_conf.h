@@ -3,7 +3,7 @@
  *
  * SPDX-License-Identifier: MIT
  *
- * Py2HWSW Version 0.81 has generated this code (https://github.com/IObundle/py2hwsw).
+ * Py2HWSW Version 0.81.0 has generated this code (https://github.com/IObundle/py2hwsw).
  */
 
 #ifndef H_IOB_DMA_CSRS_CONF_H
@@ -42,7 +42,7 @@
 #define IOB_DMA_CSRS_R_BUF_LEVEL_ADDR 12
 #define IOB_DMA_CSRS_R_BUF_LEVEL_W 32
 #define IOB_DMA_CSRS_VERSION_ADDR 16
-#define IOB_DMA_CSRS_VERSION_W 16
-#define IOB_DMA_CSRS_VERSION 0x0081
+#define IOB_DMA_CSRS_VERSION_W 32
+#define IOB_DMA_CSRS_VERSION 0x008100
 
 #endif // H_IOB_DMA_CSRS_CONF_H

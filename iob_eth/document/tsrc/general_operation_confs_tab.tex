@@ -2,7 +2,7 @@
 %
 % SPDX-License-Identifier: MIT
 %
-% Py2HWSW Version 0.81 has generated this code (https://github.com/IObundle/py2hwsw).
+% Py2HWSW Version 0.81.0 has generated this code (https://github.com/IObundle/py2hwsw).
 
 PREAMBLE & M & NA & 8'h55 & NA & Ethernet packet preamble value \\* \nobreakhline
 \rowcolor{iob-blue}
@@ -22,4 +22,4 @@ PHY\_RST\_CNT & P & NA & 20'hFFFFF & NA & PHY reset counter value. Sets the dura
 BD\_NUM\_LOG2 & P & NA & 7 & 7 & Log2 amount of buffer descriptors \\ \hline
 \rowcolor{iob-blue}
 BUFFER\_W & P & 0 & 11 & 32 & Buffer size \\ \hline
-VERSION & M & NA & 16'h0001 & NA & Product version. This 16-bit macro uses nibbles to represent decimal numbers using their binary values. The two most significant nibbles represent the integral part of the version, and the two least significant nibbles represent the decimal part. \\
+VERSION & M & NA & 24'h000100 & NA & Product version in SemVer format. This 24-bit macro uses nibbles to represent decimal numbers using their binary values. The two most significant nibbles represent the major part of the version, followed by two nibbles that represent the minor part. The two least significant nibbles represent the patch version. For example V12.34.56 is represented by 0x123456. \\

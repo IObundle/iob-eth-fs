@@ -3,4 +3,4 @@
 `define IOB_PRIO_ENC_W 21
 `define IOB_PRIO_ENC_MODE "LOW"
 // Core Configuration Macros.
-`define IOB_PRIO_ENC_VERSION 16'h0081
+`define IOB_PRIO_ENC_VERSION 24'h008100

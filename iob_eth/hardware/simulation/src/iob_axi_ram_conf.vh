@@ -9,6 +9,6 @@
 `define IOB_AXI_RAM_FILE_SIZE 1
 `define IOB_AXI_RAM_HEX_DATA_W 32
 // Core Configuration Macros.
-`define IOB_AXI_RAM_VERSION 16'h0081
+`define IOB_AXI_RAM_VERSION 24'h008100
 // Core Derived Parameters. DO NOT CHANGE
 `define IOB_AXI_RAM_STRB_WIDTH (DATA_WIDTH / 8)

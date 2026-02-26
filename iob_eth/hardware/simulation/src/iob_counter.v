@@ -2,7 +2,7 @@
 //
 // SPDX-License-Identifier: MIT
 //
-// Py2HWSW Version 0.81 has generated this code (https://github.com/IObundle/py2hwsw).
+// Py2HWSW Version 0.81.0 has generated this code (https://github.com/IObundle/py2hwsw).
 
 `timescale 1ns / 1ps
 `include "iob_counter_conf.vh"

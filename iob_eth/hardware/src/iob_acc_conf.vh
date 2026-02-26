@@ -4,4 +4,4 @@
 `define IOB_ACC_INCR_W DATA_W
 `define IOB_ACC_RST_VAL {DATA_W{1'b0}}
 // Core Configuration Macros.
-`define IOB_ACC_VERSION 16'h0081
+`define IOB_ACC_VERSION 24'h008100

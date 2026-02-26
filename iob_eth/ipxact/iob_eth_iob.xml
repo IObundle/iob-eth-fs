@@ -5,14 +5,14 @@ SPDX-FileCopyrightText: 2026 IObundle, Lda
 
 SPDX-License-Identifier: MIT
 
-Py2HWSW Version 0.81 has generated this code (https://github.com/IObundle/py2hwsw).
+Py2HWSW Version 0.81.0 has generated this code (https://github.com/IObundle/py2hwsw).
 -->
 
 <ipxact:component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:kactus2="http://kactus2.cs.tut.fi" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
 	<ipxact:vendor>IObundle</ipxact:vendor>
 	<ipxact:library>IP</ipxact:library>
 	<ipxact:name>IOB-ETH-IOB</ipxact:name>
-	<ipxact:version>0.1</ipxact:version>
+	<ipxact:version>0.1.0</ipxact:version>
 	<ipxact:busInterfaces>
 		<ipxact:busInterface>
 			<ipxact:name>clk_en_rst_s</ipxact:name>
@@ -230,7 +230,7 @@ Py2HWSW Version 0.81 has generated this code (https://github.com/IObundle/py2hws
 			<ipxact:addressBlock>
 				<ipxact:name>CSR_REGS</ipxact:name>
 				<ipxact:baseAddress>0</ipxact:baseAddress>
-				<ipxact:range>2050</ipxact:range>
+				<ipxact:range>2052</ipxact:range>
 				<ipxact:width>32</ipxact:width>
 				<ipxact:usage>register</ipxact:usage>
 				<ipxact:access>read-write</ipxact:access>
@@ -917,9 +917,9 @@ Py2HWSW Version 0.81 has generated this code (https://github.com/IObundle/py2hws
 				</ipxact:register>
 				<ipxact:register>
 					<ipxact:name>version</ipxact:name>
-					<ipxact:description>Product version. This 16-bit register uses nibbles to represent decimal numbers using their binary values. The two most significant nibbles represent the integral part of the version, and the two least significant nibbles represent the decimal part. For example V12.34 is represented by 0x1234.</ipxact:description>
+					<ipxact:description>Product version in SemVer format. This 24-bit register uses nibbles to represent decimal numbers using their binary values. The two most significant nibbles represent the major part of the version, followed by two nibbles that represent the minor part. The two least significant nibbles represent the patch version. For example V12.34.56 is represented by 0x123456.</ipxact:description>
 					<ipxact:addressOffset>"16'h0800</ipxact:addressOffset>
-					<ipxact:size>16</ipxact:size>
+					<ipxact:size>32</ipxact:size>
 					<ipxact:volatile>false</ipxact:volatile>
 					<ipxact:access>read-only</ipxact:access>
 					<ipxact:field>
@@ -927,10 +927,10 @@ Py2HWSW Version 0.81 has generated this code (https://github.com/IObundle/py2hws
 						<ipxact:bitOffset>0</ipxact:bitOffset>
 						<ipxact:resets>
 							<ipxact:reset resetTypeRef="arst_i">
-								<ipxact:value>0001</ipxact:value>
+								<ipxact:value>000100</ipxact:value>
 							</ipxact:reset>
 						</ipxact:resets>
-						<ipxact:bitWidth>16</ipxact:bitWidth>
+						<ipxact:bitWidth>24</ipxact:bitWidth>
 						<ipxact:volatile>false</ipxact:volatile>
 						<ipxact:access>read-only</ipxact:access>
 						<ipxact:modifiedWriteValue></ipxact:modifiedWriteValue>
@@ -1965,7 +1965,7 @@ Py2HWSW Version 0.81 has generated this code (https://github.com/IObundle/py2hws
 			<ipxact:description>Asynchronous active-high reset</ipxact:description>
 		</ipxact:resetType>
 	</ipxact:resetTypes>
-	<ipxact:description>IObundle's ethernet core. Driver-compatible with the [ethmac](https://opencores.org/projects/ethmac) core, containing a similar Control/Status Register interface.</ipxact:description>
+	<ipxact:description>IObundle's ethernet core. Driver-compatible with the [ethmac](https://opencores.org/projects/ethmac) core, containing a similar Control/Status Register interface. The original sources for this core and public key signature are available at: https://github.com/IObundle/iob-eth.</ipxact:description>
 	<ipxact:parameters>
 		<ipxact:parameter kactus2:usageCount="1" parameterId="PREAMBLE_ID" type="string">
 			<ipxact:name>PREAMBLE</ipxact:name>
@@ -2029,8 +2029,8 @@ Py2HWSW Version 0.81 has generated this code (https://github.com/IObundle/py2hws
 		</ipxact:parameter>
 		<ipxact:parameter kactus2:usageCount="1" parameterId="VERSION_ID" type="string">
 			<ipxact:name>VERSION</ipxact:name>
-			<ipxact:description>Product version. This 16-bit macro uses nibbles to represent decimal numbers using their binary values. The two most significant nibbles represent the integral part of the version, and the two least significant nibbles represent the decimal part.</ipxact:description>
-			<ipxact:value>16'h0001</ipxact:value>
+			<ipxact:description>Product version in SemVer format. This 24-bit macro uses nibbles to represent decimal numbers using their binary values. The two most significant nibbles represent the major part of the version, followed by two nibbles that represent the minor part. The two least significant nibbles represent the patch version. For example V12.34.56 is represented by 0x123456.</ipxact:description>
+			<ipxact:value>24'h000100</ipxact:value>
 		</ipxact:parameter>
 	</ipxact:parameters>
 	<ipxact:vendorExtensions>

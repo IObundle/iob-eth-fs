@@ -2,7 +2,7 @@
 //
 // SPDX-License-Identifier: MIT
 //
-// Py2HWSW Version 0.81 has generated this code (https://github.com/IObundle/py2hwsw).
+// Py2HWSW Version 0.81.0 has generated this code (https://github.com/IObundle/py2hwsw).
 
 `timescale 1ns / 1ps
 `include "iob_axistream_in_csrs_conf.vh"
@@ -331,10 +331,10 @@ module iob_axistream_in_csrs #(
 
 
 //NAME: version;
-//MODE: R; WIDTH: 16; RST_VAL: 0081; ADDR: 28; SPACE (bytes): 2 (max); TYPE: REG. 
+//MODE: R; WIDTH: 24; RST_VAL: 008100; ADDR: 28; SPACE (bytes): 4 (max); TYPE: REG. 
 
     wire version_addressed_r;
-    assign version_addressed_r = (internal_iob_addr_stable>>shift_amount >= (28>>shift_amount)) && (internal_iob_addr_stable>>shift_amount <= iob_max(1,29>>shift_amount));
+    assign version_addressed_r = (internal_iob_addr_stable>>shift_amount >= (28>>shift_amount)) && (internal_iob_addr_stable>>shift_amount <= iob_max(1,31>>shift_amount));
 
 
     wire auto_addressed;
@@ -404,7 +404,7 @@ module iob_axistream_in_csrs #(
         end
 
         if(version_addressed_r) begin
-            iob_rdata_nxt[0+:16] = 16'h0081|16'd0;
+            iob_rdata_nxt[0+:32] = 32'h008100|32'd0;
         end
 
 
