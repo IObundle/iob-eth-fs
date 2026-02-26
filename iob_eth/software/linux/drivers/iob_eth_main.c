@@ -1384,4 +1384,4 @@ module_exit(iob_eth_exit);
 MODULE_LICENSE("Dual MIT/GPL");
 MODULE_AUTHOR("IObundle");
 MODULE_DESCRIPTION("iob_eth Drivers");
-MODULE_VERSION("0.1");
+MODULE_VERSION("0.1.0");

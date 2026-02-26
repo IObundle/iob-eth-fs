@@ -3,4 +3,4 @@
 `define IOB_REG_CARE_DATA_W 1
 `define IOB_REG_CARE_RST_VAL {DATA_W{1'b0}}
 // Core Configuration Macros.
-`define IOB_REG_CARE_VERSION 16'h0001
+`define IOB_REG_CARE_VERSION 24'h000100

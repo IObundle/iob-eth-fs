@@ -3,4 +3,4 @@
 `define IOB_SYNC_REG_A_DATA_W 1
 `define IOB_SYNC_REG_A_RST_VAL {DATA_W{1'b0}}
 // Core Configuration Macros.
-`define IOB_SYNC_REG_A_VERSION 16'h0001
+`define IOB_SYNC_REG_A_VERSION 24'h000100

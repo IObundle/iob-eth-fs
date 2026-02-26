@@ -4,4 +4,4 @@
 `define IOB_CTLS_MODE 0
 `define IOB_CTLS_SYMBOL 0
 // Core Configuration Macros.
-`define IOB_CTLS_VERSION 16'h0081
+`define IOB_CTLS_VERSION 24'h008100

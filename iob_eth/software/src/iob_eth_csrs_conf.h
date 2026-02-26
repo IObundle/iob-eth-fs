@@ -3,7 +3,7 @@
  *
  * SPDX-License-Identifier: MIT
  *
- * Py2HWSW Version 0.81 has generated this code (https://github.com/IObundle/py2hwsw).
+ * Py2HWSW Version 0.81.0 has generated this code (https://github.com/IObundle/py2hwsw).
  */
 
 #ifndef H_IOB_ETH_CSRS_CONF_H
@@ -81,7 +81,7 @@
 #define IOB_ETH_CSRS_BD_ADDR 1024
 #define IOB_ETH_CSRS_BD_W 32
 #define IOB_ETH_CSRS_VERSION_ADDR 2048
-#define IOB_ETH_CSRS_VERSION_W 16
-#define IOB_ETH_CSRS_VERSION 0x0001
+#define IOB_ETH_CSRS_VERSION_W 32
+#define IOB_ETH_CSRS_VERSION 0x000100
 
 #endif // H_IOB_ETH_CSRS_CONF_H

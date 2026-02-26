@@ -2,4 +2,4 @@
 // Core Configuration Parameters Default Values
 `define IOB_REVERSE_DATA_W 21
 // Core Configuration Macros.
-`define IOB_REVERSE_VERSION 16'h0081
+`define IOB_REVERSE_VERSION 24'h008100

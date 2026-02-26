@@ -9,4 +9,4 @@
 `define IOB_DMA_WLEN_W 12
 `define IOB_DMA_RLEN_W 12
 // Core Configuration Macros.
-`define IOB_DMA_VERSION 16'h0081
+`define IOB_DMA_VERSION 24'h008100

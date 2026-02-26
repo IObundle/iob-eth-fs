@@ -4,4 +4,4 @@
 `define IOB_RAM_T2P_ADDR_W 1
 `define IOB_RAM_T2P_DATA_W 1
 // Core Configuration Macros.
-`define IOB_RAM_T2P_VERSION 16'h0081
+`define IOB_RAM_T2P_VERSION 24'h008100

@@ -5,7 +5,7 @@
 `define IOB_FIFO_ASYNC_ADDR_W 3
 `define IOB_FIFO_ASYNC_BIG_ENDIAN 0
 // Core Configuration Macros.
-`define IOB_FIFO_ASYNC_VERSION 16'h0081
+`define IOB_FIFO_ASYNC_VERSION 24'h008100
 // Core Derived Parameters. DO NOT CHANGE
 `define IOB_FIFO_ASYNC_MAXDATA_W iob_max(W_DATA_W, R_DATA_W)
 `define IOB_FIFO_ASYNC_MINDATA_W iob_min(W_DATA_W, R_DATA_W)

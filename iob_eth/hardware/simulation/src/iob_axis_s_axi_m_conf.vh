@@ -7,7 +7,7 @@
 `define IOB_AXIS_S_AXI_M_WLEN_W 1
 `define IOB_AXIS_S_AXI_M_RLEN_W 1
 // Core Configuration Macros.
-`define IOB_AXIS_S_AXI_M_VERSION 16'h0081
+`define IOB_AXIS_S_AXI_M_VERSION 24'h008100
 // Core Derived Parameters. DO NOT CHANGE
 `define IOB_AXIS_S_AXI_M_WRITE_HEXFILE "none"
 `define IOB_AXIS_S_AXI_M_READ_HEXFILE "none"

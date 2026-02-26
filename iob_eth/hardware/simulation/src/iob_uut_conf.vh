@@ -10,4 +10,4 @@
 `define IOB_UUT_BD_NUM_LOG2 7
 `define IOB_UUT_BUFFER_W 11
 // Core Configuration Macros.
-`define IOB_UUT_VERSION 16'h0081
+`define IOB_UUT_VERSION 24'h008100
